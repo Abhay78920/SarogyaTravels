@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>FAQ-Sarogya Travels</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="accordion">
+    <div class="image-box">
+      <img src="images/logo_phone_sharp.jpg" alt="">
+    </div>
+    <div class="accordion-text">
+      <div class="title">Frequently Asked Questions (FAQ)</div>
+    <ul class="faq-text">
+      <li>
+        <div class="question-arrow">
+          <span class="question">What locations do we provide trips to?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>We offer spiritual journeys to Uttarakhand's Char Dhams (Kedarnath, Badrinath, Yamunotri, Gangotri), along with destinations like Manali and Agra.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">What is the refund policy for trip cancellations?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Upon canceling a trip after payment, you'll receive a 60% refund, with a 40% cancellation charge.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Can I customize my travel itinerary with Sarogya Travels?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p> Yes, our team is dedicated to tailoring your journey. Contact us to personalize your dream travel experience.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Can I modify my travel dates after booking a package?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Yes, we understand plans may change. Contact us at <a href="tel:+918383920977">+91 83839 20977</a> or email us at <a href="mailto:sarogyatravels@gmail.com">sarogyatravels@gmail.com</a>. and we'll assist you in adjusting your travel dates.</p>
+        <span class="line"></span>
+      </li>
+     
+    </ul>
+    </div>
+  </div>
+
+
+  <script>
+    let li = document.querySelectorAll(".faq-text li");
+    for (var i = 0; i < li.length; i++) {
+      li[i].addEventListener("click", (e)=>{
+        let clickedLi;
+        if(e.target.classList.contains("question-arrow")){
+          clickedLi = e.target.parentElement;
+        }else{
+          clickedLi = e.target.parentElement.parentElement;
+        }
+       clickedLi.classList.toggle("showAnswer");
+      });
+    }
+  </script>
+
+</body>
+</html>
